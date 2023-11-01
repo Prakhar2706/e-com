@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Services
+{% endblock title %}
+
+{% block body %}
+
+<div class="album py-0 bg-body-tertiary">
+  <h1 class = "my-2 text-center">Select from the range of items.</h1>
+  <div class="container my-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="/static/img/a.jpeg" class="img-fluid" alt="Notebooks" />
+                  <div class="card-body">
+                      <p class="card-text">There is a wide variety of notebooks of every type and of every company. Notes like drawing note, writing note, etc.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="/static/img/2.png" class="img-fluid" alt="Stationaries" />
+                  <div class="card-body">
+                      <p class="card-text">There is a wide variety of stationary items like pen, pencils, scissor, paper cutter, Tapes, charts, etc .</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="/static/img/b.jpeg" class="img-fluid" alt="Books" />
+                  <div class="card-body">
+                      <p class="card-text">A wide variety of book ranges of every kind like educational, novels, religious books, competitive books, etc.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="\static\img\5.jpg" class="img-fluid" alt="Pre Designed Phone covers" />
+                  <div class="card-body">
+                      <p class="card-text">There is a wide range of phone covers of various designs and various types like back cover, flip cover, etc.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="\static\img\3.webp" class="img-fluid" alt="Printed Phone covers" />
+                  <div class="card-body">
+                      <p class="card-text">You can create any kind of image on the back of your cover like your image or some other images.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col">
+              <div class="card shadow-sm" style="width: 20rem;">
+                  <img src="\static\img\c.webp" class="img-fluid" alt="iPhone covers" />
+                  <div class="card-body">
+                      <p class="card-text">There is a wide range of iphone back covers of various designs and models like iphone-X to iphone 14 pro max. </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Buy  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+
+<style>
+  .album {
+      padding-bottom: 0;
+      background-color: #f8f9fa;
+  }
+
+  .album h1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      text-align: Responsive;
+  }
+
+  .container {
+      margin-bottom: 4rem;
+  }
+
+  .items-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .col {
+      flex-basis: calc(33.333% - 1rem);
+      margin-bottom: 2rem;
+  }
+
+  .card {
+      box-shadow: 1 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card img {
+      width: 100%;
+      height: 200px; /* Set the desired height */
+      object-fit: cover;
+  }
+
+  .card-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .card-text {
+      margin-bottom: 0;
+  }
+
+  .btn-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .col {
+          flex-basis: calc(50% - 1rem);
+      }
+  }
+
+  @media (max-width: 576px) {
+      .col {
+          flex-basis: 100%;
+      }
+  }
+
+  @media (min-width: 573px) and (max-width: 875px) {
+      .col {
+          flex-basis: calc(50% - 1rem);
+      }
+  }
+</style>
+
+{% endblock body %}

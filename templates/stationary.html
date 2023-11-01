@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Stationary
+{% endblock title %}
+
+{% block body %}
+
+<div class="container text-center" style="border-width:6px; border-style:groove; border-color:red; padding: 1rem; background-color:#F0E6FF">
+    <div class="row">
+      <div class="col">
+        <a href = "https://www.amazon.com/s?k=notebooks&ref=nb_sb_noss_2">
+        <img src="/static/img/a.jpeg" class="img-fluid" alt="Notebooks" />
+        </a>
+      </div>
+      <div class="col">
+        <ul>
+            <li>For students</li>
+            <li>For professionals</li>
+            <li>For artists</li>
+            <li>For writers</li>
+            <li>For architects</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container text-center" style="border-width:6px; border-style:groove; border-color:red; padding: 1rem; background-color:#F0E6FF">
+    <div class="row">
+      <div class="col">
+        <ul>
+            <li>Everyday Writing</li>
+            <li>Office and Business</li>
+            <li>Academic and Studying</li>
+            <li>Gift-Giving</li>
+            <li>Personalization and Customization</li>
+        </ul>
+      </div>
+      <div class="col">
+        <a href = "https://www.amazon.com/s?k=pen&ref=nb_sb_noss_2">
+        <img src="/static/img/pen.jpeg" class="img-fluid" alt="Notebooks" />
+        </a>
+      </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container text-center" style="border-width:6px; border-style:groove; border-color:red; padding: 1rem; background-color:#F0E6FF">
+  <div class="row">
+    <div class="col">
+      <a href ="https://www.amazon.com/s?k=geometry+box&ref=nb_sb_noss">
+      <img src="/static/img/geometry.jpeg" class="img-fluid" alt="Notebooks" />
+      </a>
+    </div>
+    <div class="col">
+      <ul>
+          <li>Straight Line</li>
+          <li>Curved Line</li>
+          <li>Dotted Line</li>
+          <li>Zigzag Line</li>
+          <li>Perpendicular Lines</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container text-center" style="border-width:6px; border-style:groove; border-color:red; padding: 1rem; background-color:#F0E6FF">
+    <div class="row">
+      <div class="col">
+        <ul>
+            <li>Brand Identity</li>
+            <li>Packaging Design</li>
+            <li>Call-to-Action Buttons</li>
+            <li>Emotional Appeal</li>
+            <li>Color Psychology</li>
+        </ul>
+      </div>
+      <div class="col">
+        <a href="https://www.amazon.com/s?k=colors&ref=nb_sb_noss_1">
+        <img src="/static/img/colors.jpeg" class="img-fluid" alt="Notebooks" />
+        </a>
+      </div>
+    </div>
+</div>
+
+
+<style>
+    <style>
+        .container {
+          border-width: 6px;
+          border-style: double;
+          border-color: red;
+          padding: 1rem;
+          background-color: #F0E6FF;
+        }
+    
+        .text-center {
+          text-align: center;
+        }
+    
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+    
+        .col {
+          flex: 1;
+          padding: 0.5rem;
+        }
+    
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+    
+        li {
+          margin-bottom: 0.5rem;
+        }
+    
+        @media (max-width: 768px) {
+          .col {
+            flex-basis: 100%;
+          }
+        }
+      </style>
+</style>
+
+{% endblock body %}

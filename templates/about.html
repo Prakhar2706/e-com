@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock title %}
+
+{% block body %}
+<style>
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .content {
+            text-align: left;
+        }
+        
+        .content h2 {
+            font-size: 20px;
+        }
+        
+        .content span {
+            display: none;
+        }
+        
+        .credit {
+            font-size: 12px;
+        }
+    }
+    
+    /* General Styles */
+    .image img {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .content h2 {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+    }
+    
+    .content span {
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #333;
+        margin: 20px auto;
+    }
+    
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+    }
+    
+    .credit {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .credit a {
+        color: tomato;
+        text-decoration: none;
+    }
+</style>
+
+<section>
+    <div class="image">
+        <img src="/static/img/a3.jpg">
+    </div>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <span></span>
+        <p>It is a website created through Django framework which is just made for the learning purpose.<br>
+            It is just a simple web application for stationary and back covers shopping.    
+        </p>
+    </div>
+</section><br><br>
+<div class="credit">Made with <span style="color: tomato;">❤</span> by <a href="https://www.linkedin.com/in/prakhar-gupta2706/">Prakhar</a></div>
+
+{% endblock body %}

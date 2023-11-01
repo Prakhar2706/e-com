@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block body %}
+
+<div class = "container-fluid my-1 px-0">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/img/c2.jpeg" class="d-block w-100" height="300" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/c1.jpeg"  class="d-block w-100" height="300" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/c3.jpeg" class="d-block w-100" height="300" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/c4.jpeg" class="d-block w-100" height="300" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container-fluid my-0 px-0" style="background-color:#FFEDFF">
+    <div class="container text-center py-2">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="container" style="border-width:6px; border-style:double; border-color:red; padding: 1rem; background-color:#F0E6FF">
+        <form method="post" action="/contact">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name"><B>Name:</B></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email"><b>E-mail id:</b></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your e-mail id">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="phone"><b>Mobile Number:</b></label>
+                <input type="Number" class="form-control" id="phone" name="phone" placeholder="Enter Your Mobile Number">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="desc"><b>Why you want to contact us:</b></label>
+                <textarea class="form-control" id="desc" rows="3" name="desc" placeholder="Enter Your issue"></textarea>
+            </div>
+            <br>
+            <button class="btn btn-primary" type="submit">
+                Submit
+            </button>
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </form>
+    </div>
+</div>
+<br>
+<br>
+
+{% endblock body %}

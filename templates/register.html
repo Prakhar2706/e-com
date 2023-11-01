@@ -1,0 +1,74 @@
+<div class="register-box">
+    <form method="post" class="register-form">
+      <table class="form-table">
+        {{ form.as_table }}
+        {% csrf_token %}
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Register" class="submit-btn">
+            <a href="/login" class="login-btn">Login</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  
+
+<style>
+    body {
+        background-image: url("/static/img/login2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .register-box {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      
+      .register-form {
+        width: 100%;
+      }
+      
+      .form-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .form-table td {
+        padding: 10px;
+      }
+      
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+      
+      .submit-btn:focus {
+        outline: none;
+      }
+      
+      
+
+</style>
