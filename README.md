@@ -2,15 +2,11 @@
 
 E-com is a simple Django-based e-commerce website that links to Amazon and Flipkart to display products. The website provides a user-friendly experience with essential features like user login, registration, contact forms, and a responsive design.
 
-## Features
-
-- **User Login**: Users can securely log in to access their accounts.
-- **User Registration**: New users can create an account easily.
-- **Contact Form**: Users can reach out via a simple contact form.
-- **About Section**: Includes an "About" page with details about the site.
-- **User Friendly**: Simple and easy-to-navigate interface.
-- **Responsive Design**: Works well on all screen sizes, including mobile devices.
-- **Product Links**: Shows products from Amazon and Flipkart.
+![image](https://github.com/user-attachments/assets/49dd76e5-d0ef-4ab4-94c1-63dbcc3d155e)
+![image](https://github.com/user-attachments/assets/c8062a87-2734-4a91-8bc5-6ba6d2fde3a9)
+![image](https://github.com/user-attachments/assets/2535cae9-049f-41d6-8bc1-47daf646b6f8)
+![image](https://github.com/user-attachments/assets/1a86be48-4f62-4be7-ab5e-4c8988c59147)
+![image](https://github.com/user-attachments/assets/1e14d770-57f5-47bb-b458-04e3f66ad298)
 
 ## Installation
 
@@ -73,6 +69,16 @@ E-com is a simple Django-based e-commerce website that links to Amazon and Flipk
     ```bash
     http://127.0.0.1:8000/admin
     ```
+
+## Features
+
+- **User Login**: Users can securely log in to access their accounts.
+- **User Registration**: New users can create an account easily.
+- **Contact Form**: Users can reach out via a simple contact form.
+- **About Section**: Includes an "About" page with details about the site.
+- **User Friendly**: Simple and easy-to-navigate interface.
+- **Responsive Design**: Works well on all screen sizes, including mobile devices.
+- **Product Links**: Shows products from Amazon and Flipkart.
 
 ## Requirements
 
